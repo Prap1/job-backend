@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://job-backend-teal.vercel.app/',
+    origin:'https://job-backend-5aaa.onrender.com/',
     credentials:true
 }
 
