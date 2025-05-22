@@ -17,9 +17,12 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://job-backend-5aaa.onrender.com/',
-    credentials:true
-}
+  origin: 'https://job-frontend-kappa.vercel.app', // ✅ Correct origin
+  credentials: true
+};
+
+app.use(cors(corsOptions));
+
 
 app.use(cors(corsOptions));
 
