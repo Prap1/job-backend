@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-  origin: 'https://job-frontend-kappa.vercel.app', // ✅ Correct origin
+  origin: 'http://localhost:5173', // ✅ Correct origin
   credentials: true
 };
 
